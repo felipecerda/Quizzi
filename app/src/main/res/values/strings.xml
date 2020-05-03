@@ -1,10 +1,30 @@
 <resources>
     <string name="app_name">Quizzi</string>
+
+    <!-- Question headers -->
     <string name="question_1">Question 1:</string>
     <string name="question_2">Question 2:</string>
     <string name="question_3">Question 3:</string>
     <string name="question_4">Question 4:</string>
     <string name="question_5">Question 5:</string>
     <string name="question_6">Question 6:</string>
+
+    <!-- Questions -->
     <string name="q1">How many engines does an Airbus A380 have?</string>
+    <string name="q2">What is true about the aircraft on the picture?</string>
+    <string name="q3">Which company manufactures the popular 787 aircraft?</string>
+    <string name="q4"></string>
+    <string name="q5"></string>
+    <string name="q6"></string>
+
+    <!-- Option Strings -->
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="four">4</string>
+    <string name="q2_1">It is a Spitfire</string>
+    <string name="q2_2">It fought in the Gulf War</string>
+    <string name="q2_3">It fought in World War 2</string>
+    <string name="q2_4">It is a Lancaster</string>
+    <string name="company_name">Company Name</string>
+    <string name="spitfire_description">Spitfire</string>
 </resources>

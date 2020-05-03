@@ -14,17 +14,81 @@
 
         <TextView
             style="@style/QuestionHeaderStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:text="@string/question_1" />
 
         <TextView
             style="@style/QuestionStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
             android:text="@string/q1" />
+
+        <RadioGroup
+            style="@style/RadioStyle"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/four"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/question_2" />
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:layout_marginBottom="16dp"
+            android:text="@string/q2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/spitfire_description"
+            android:src="@drawable/spitfire" />
+
+        <CheckBox
+            style="@style/CheckboxStyle"
+            android:text="@string/q2_1" />
+
+        <CheckBox
+            style="@style/CheckboxStyle"
+            android:text="@string/q2_2" />
+
+        <CheckBox
+            style="@style/CheckboxStyle"
+            android:text="@string/q2_3" />
+
+        <CheckBox
+            style="@style/CheckboxStyle"
+            android:layout_marginBottom="16dp"
+            android:text="@string/q2_4" />
+
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/question_3" />
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/q3" />
+
+        <EditText
+            android:id="@+id/q3_text_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/company_name"
+            android:layout_marginBottom="16dp"
+            android:inputType="textCapWords"/>
 
     </LinearLayout>
 
