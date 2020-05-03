@@ -21,23 +21,21 @@
             android:text="@string/q1" />
 
         <RadioGroup
+            android:id="@+id/radio_question_1"
             style="@style/RadioStyle"
             android:orientation="vertical">
             <RadioButton android:id="@+id/radio_1_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/one"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="@string/one" />
             <RadioButton android:id="@+id/radio_1_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/two"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="@string/two" />
             <RadioButton android:id="@+id/radio_1_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/four"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="@string/four" />
         </RadioGroup>
 
         <TextView
@@ -104,18 +102,15 @@
             <RadioButton android:id="@+id/radio_4_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/year_1976"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="@string/year_1976" />
             <RadioButton android:id="@+id/radio_4_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/year_1980"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="@string/year_1980" />
             <RadioButton android:id="@+id/radio_4_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/year_1979"
-                android:onClick="onRadioButtonClicked"/>
+                android:text="@string/year_1979" />
         </RadioGroup>
 
         <TextView
@@ -165,6 +160,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
+            android:backgroundTint="#03A9F4"
             android:onClick="checkAnswers"
             android:text="@string/submit_answers" />
 
