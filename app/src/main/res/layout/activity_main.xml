@@ -23,17 +23,17 @@
         <RadioGroup
             style="@style/RadioStyle"
             android:orientation="vertical">
-            <RadioButton android:id="@+id/radio_one"
+            <RadioButton android:id="@+id/radio_1_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/one"
                 android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/radio_two"
+            <RadioButton android:id="@+id/radio_1_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/two"
                 android:onClick="onRadioButtonClicked"/>
-            <RadioButton android:id="@+id/radio_four"
+            <RadioButton android:id="@+id/radio_1_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/four"
@@ -86,9 +86,87 @@
             android:id="@+id/q3_text_input"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:hint="@string/company_name"
+            android:hint="@string/answer"
             android:layout_marginBottom="16dp"
             android:inputType="textCapWords"/>
+
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/question_4" />
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/q4" />
+
+        <RadioGroup
+            style="@style/RadioStyle"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/radio_4_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_1976"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_4_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_1980"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_4_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year_1979"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/question_5" />
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/q5" />
+
+        <CheckBox
+            style="@style/CheckboxStyle"
+            android:text="@string/q5_1" />
+
+        <CheckBox
+            style="@style/CheckboxStyle"
+            android:text="@string/q5_2" />
+
+        <CheckBox
+            style="@style/CheckboxStyle"
+            android:text="@string/q5_3" />
+
+        <CheckBox
+            style="@style/CheckboxStyle"
+            android:layout_marginBottom="16dp"
+            android:text="@string/q5_4" />
+
+        <TextView
+            style="@style/QuestionHeaderStyle"
+            android:text="@string/question_6" />
+
+        <TextView
+            style="@style/QuestionStyle"
+            android:text="@string/q6" />
+
+        <EditText
+            android:id="@+id/q6_text_input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:hint="@string/answer"
+            android:layout_marginBottom="16dp"
+            android:inputType="textCapWords"/>
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:onClick="checkAnswers"
+            android:text="@string/submit_answers" />
 
     </LinearLayout>
 

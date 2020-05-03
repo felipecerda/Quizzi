@@ -13,9 +13,9 @@
     <string name="q1">How many engines does an Airbus A380 have?</string>
     <string name="q2">What is true about the aircraft on the picture?</string>
     <string name="q3">Which company manufactures the popular 787 aircraft?</string>
-    <string name="q4"></string>
-    <string name="q5"></string>
-    <string name="q6"></string>
+    <string name="q4">In which year did the Concorde enter commercial service?</string>
+    <string name="q5">Which of the following are forces that act on an airplane in flight?</string>
+    <string name="q6">What does EASA stand for?</string>
 
     <!-- Option Strings -->
     <string name="one">1</string>
@@ -25,6 +25,14 @@
     <string name="q2_2">It fought in the Gulf War</string>
     <string name="q2_3">It fought in World War 2</string>
     <string name="q2_4">It is a Lancaster</string>
-    <string name="company_name">Company Name</string>
+    <string name="answer">Answer here</string>
     <string name="spitfire_description">Spitfire</string>
+    <string name="year_1976">1976</string>
+    <string name="year_1980">1980</string>
+    <string name="year_1979">1979</string>
+    <string name="q5_1">Lift</string>
+    <string name="q5_2">Gravity</string>
+    <string name="q5_3">Weight</string>
+    <string name="q5_4">Friction</string>
+    <string name="submit_answers">Submit Answers</string>
 </resources>
