@@ -56,18 +56,22 @@
             android:src="@drawable/spitfire" />
 
         <CheckBox
+            android:id="@+id/spitfire_checkbox"
             style="@style/CheckboxStyle"
             android:text="@string/q2_1" />
 
         <CheckBox
+            android:id="@+id/gulf_checkbox"
             style="@style/CheckboxStyle"
             android:text="@string/q2_2" />
 
         <CheckBox
+            android:id="@+id/ww2_checkbox"
             style="@style/CheckboxStyle"
             android:text="@string/q2_3" />
 
         <CheckBox
+            android:id="@+id/lancaster_checkbox"
             style="@style/CheckboxStyle"
             android:layout_marginBottom="16dp"
             android:text="@string/q2_4" />
@@ -122,18 +126,22 @@
             android:text="@string/q5" />
 
         <CheckBox
+            android:id="@+id/lift_checkbox"
             style="@style/CheckboxStyle"
             android:text="@string/q5_1" />
 
         <CheckBox
+            android:id="@+id/gravity_checkbox"
             style="@style/CheckboxStyle"
             android:text="@string/q5_2" />
 
         <CheckBox
+            android:id="@+id/weight_checkbox"
             style="@style/CheckboxStyle"
             android:text="@string/q5_3" />
 
         <CheckBox
+            android:id="@+id/friction_checkbox"
             style="@style/CheckboxStyle"
             android:layout_marginBottom="16dp"
             android:text="@string/q5_4" />
