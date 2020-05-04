@@ -30,8 +30,6 @@ public class MainActivity extends AppCompatActivity {
         /* If the answer is correct, increase the number of correct answers
          * Check for question 1 */
         if(answerOne.equals("4")) {
-            /* TODO Remove log */
-            Log.i("MainActivity", "Answer 1 correct");
             correctAnswers += 1;
         }
 
@@ -59,6 +57,17 @@ public class MainActivity extends AppCompatActivity {
 
         //Check for question 3
         if(company.equalsIgnoreCase("boeing")) {
+            correctAnswers += 1;
+        }
+
+        // Gets the answer of question number 4
+        RadioGroup questionFour = findViewById(R.id.radio_question_4);
+        int selectedFour = questionFour.getCheckedRadioButtonId();
+        RadioButton selectedAnswerFour = findViewById(selectedFour);
+        String answerFour = (String) selectedAnswerFour.getText();
+
+        //Check for question 4
+        if(answerFour.equals("1976")) {
             correctAnswers += 1;
         }
 
