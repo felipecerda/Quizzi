@@ -20,11 +20,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * This method checks whether each answer is correct or not.
+     * */
     public void checkAnswers(View view) {
         // Gets the answer of question number 1
-        RadioGroup questionOne = findViewById(R.id.radio_question_1);
+        RadioGroup questionOne = (RadioGroup) findViewById(R.id.radio_question_1);
         int selectedOne = questionOne.getCheckedRadioButtonId();
-        RadioButton selectedAnswerOne = findViewById(selectedOne);
+        RadioButton selectedAnswerOne = (RadioButton) findViewById(selectedOne);
         String answerOne = (String) selectedAnswerOne.getText();
 
         /* If the answer is correct, increase the number of correct answers
@@ -61,13 +64,40 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Gets the answer of question number 4
-        RadioGroup questionFour = findViewById(R.id.radio_question_4);
+        RadioGroup questionFour = (RadioGroup) findViewById(R.id.radio_question_4);
         int selectedFour = questionFour.getCheckedRadioButtonId();
-        RadioButton selectedAnswerFour = findViewById(selectedFour);
+        RadioButton selectedAnswerFour = (RadioButton) findViewById(selectedFour);
         String answerFour = (String) selectedAnswerFour.getText();
 
         //Check for question 4
         if(answerFour.equals("1976")) {
+            correctAnswers += 1;
+        }
+
+        // Gets the answer of question number 5
+        CheckBox liftCheckbox = (CheckBox) findViewById(R.id.lift_checkbox);
+        boolean selectedLift = liftCheckbox.isChecked();
+
+        CheckBox gravityCheckbox = (CheckBox) findViewById(R.id.gravity_checkbox);
+        boolean selectedGravity = gravityCheckbox.isChecked();
+
+        CheckBox weightCheckbox = (CheckBox) findViewById(R.id.weight_checkbox);
+        boolean selectedWeight = weightCheckbox.isChecked();
+
+        CheckBox frictionCheckbox = (CheckBox) findViewById(R.id.friction_checkbox);
+        boolean selectedFriction = frictionCheckbox.isChecked();
+
+        // Check for question 5
+        if(selectedLift && selectedWeight && !selectedGravity && !selectedFriction){
+            correctAnswers += 1;
+        }
+
+        // Gets the answer of question number 6
+        EditText easaField = (EditText) findViewById(R.id.q6_text_input);
+        String easa = easaField.getText().toString().trim();
+
+        //Check for question 6
+        if(easa.equalsIgnoreCase("European Aviation Safety Agency")) {
             correctAnswers += 1;
         }
 
