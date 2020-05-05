@@ -25,16 +25,16 @@ public class MainActivity extends AppCompatActivity {
      * */
     public void checkAnswers(View view) {
         // Gets the answer of question number 1
-        RadioGroup questionOne = (RadioGroup) findViewById(R.id.radio_question_1);
+        RadioGroup questionOne = findViewById(R.id.radio_question_1);
         int selectedOne = questionOne.getCheckedRadioButtonId();
-        RadioButton selectedAnswerOne = (RadioButton) findViewById(selectedOne);
+        RadioButton selectedAnswerOne = findViewById(selectedOne);
         String answerOne = (String) selectedAnswerOne.getText();
 
         /* If the answer is correct, increase the number of correct answers
          * Check for question 1 */
         if(answerOne.equals("4")) {
             correctAnswers += 1;
-        }
+        } else Log.i("MainActivity", "Answer is 1 not correct.");
 
         // Gets the answer of question number 2
         CheckBox spitfireCheckbox = (CheckBox) findViewById(R.id.spitfire_checkbox);
@@ -64,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
         // Gets the answer of question number 4
-        RadioGroup questionFour = (RadioGroup) findViewById(R.id.radio_question_4);
+        RadioGroup questionFour = findViewById(R.id.radio_question_4);
         int selectedFour = questionFour.getCheckedRadioButtonId();
-        RadioButton selectedAnswerFour = (RadioButton) findViewById(selectedFour);
+        RadioButton selectedAnswerFour = findViewById(selectedFour);
         String answerFour = (String) selectedAnswerFour.getText();
 
         //Check for question 4
